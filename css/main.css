@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
-@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body { margin: 60px auto; width: 70%; background-color: #000000; color: #ffffff }
 
 a { text-decoration: none; color: #ffffff; }
 a:hover { text-decoration: underline #ffffff; }
 
-p, ul { font-family: 'Roboto Mono', 'Helvetica', 'Arial', 'Sans-Serif'; font-size: 1.5em; line-height: 1.4em; color: #ffffff; }
+p, ul { font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif'; font-size: 1.5em; line-height: 1.4em; color: #ffffff; }
 
-h1, h2, h3, h4 { font-family: 'Libre Barcode 128 Text', 'Helvetica', 'Arial', 'Sans-Serif'; }
+h1, h2, h3, h4 { font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif'; }
 h1 { font-size: 3em;  }
 h2 { font-size: 2.7em; }
 h3 { font-size: 2.3em; }
 h4 { font-size: 1.9em; }
 
-nav ul, footer ul { font-size: 1em; font-family: 'Roboto Mono', 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: normal; }
+nav ul, footer ul { font-size: 1em; font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: normal; }
 nav ul li, footer ul li { display: inline; margin-right: 20px; }
 
 footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
@@ -28,5 +26,5 @@ ul.posts li { list-style: none; }
 .Desktops { margin: 0px 0px 60px; }
 .Desktops h1 { font-size: 3em; }
 .Desktops h2 { font-size: 2em; }
-.Desktops address, .cv .download { font-family: 'Roboto Mono', 'Helvetica', 'Arial', 'Sans-Serif'; }
+.Desktops address, .cv .download { font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif'; }
 .Desktops address, .cv p { font-size: 1.2em; }
