@@ -1,0 +1,22 @@
+--- layout: default title: Requests ---
+<div class="req">
+
+
+    <script>
+        function sendRequest() {
+            var o_email = document.getElementById('email').value
+            var rq = docuemnt.getElementById('request').value
+            console.log(o_email)
+            console.log(rq)
+            window.open('mailto:samjdhood@gmail.com?subject=cqor&body=' + comment);
+        }
+    </script>
+    <form align="center">
+        Email:
+        <input type="text" name="email">
+        <br /> Request:
+        <input type="text" name="request">
+        <br />
+        <input class="button" name="submit" type="button" value="submit" onclick="sendRequest()" />
+    </form>
+</div>
