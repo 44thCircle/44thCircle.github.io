@@ -1,18 +1,24 @@
---- 
-layout: default 
-title: Requests 
----
+--- layout: default title: Requests ---
 <div class="req">
     <script>
-        function sendRequest() {
-            var o_email = document.getElementById('email').value
-            var rq = document.getElementById('request').value
-            window.open('mailto:44thcircle@gmail.com?subject=request&body=' + rq);
-        }
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+        var disqus_config = function () {
+        this.page.url ="https://44thcircle.github.io/blog";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "kawa1saw"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://44thcirlce.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
     </script>
-        <input type="text" name="email" id="email" placeholder="Contact Email">
-        <br />
-        <input type="text" name="request" id="request" placeholder="Request">
-        <br />
-        <input class="button" name="submit" type="button" value="submit" onclick="sendRequest()" />
+    <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
 </div>
