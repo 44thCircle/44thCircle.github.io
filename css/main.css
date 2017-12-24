@@ -20,6 +20,17 @@ footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
 
 input { font-family: 'Slabo 27px', 'Helvetica', 'Arial', 'Sans-Serif'; font-size: 1.5em; line-height: 1.4em; color: #ffffff; border: none; background-color: #040404;}
 
+.button {
+    background-color: #040404;
+    border: none;
+    color: white;
+    padding: 8px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
 /* Blog */
 ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
 ul.posts li { list-style: none; }
