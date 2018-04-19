@@ -1,34 +1,71 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "samjdhood@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
-<html> 
-  <head>
-    <title>Requests</title>
-    
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  
-  </head>
+<html>
+
+<head>
+  <title>Requests</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
 
 
-  <body>
-    <nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/pjts">Projects</a></li>
-<li><a href="/req">Requests</a></li>
-</ul>
-</nav>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/pjts">Projects</a>
+      </li>
+      <li>
+        <a href="/req">Requests</a>
+      </li>
+    </ul>
+  </nav>
 
-<div class="req">
-	<p>WIP</p>
-</div>
+  <div class="req">
+    <form action="" method="post">
+      name: <input type="text" name="name"><br>
+      email: <input type="text" name="email"><br>
+      request:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </div>
 
   <footer>
-   <ul>
-   <li><a href="mailto:44thcircle@gmail.com">Email</a></li>
-   <li><a href="https://github.com/44thCircle">GitHub</a></li>
-   </ul>
+    <ul>
+      <li>
+        <a href="mailto:44thcircle@gmail.com">Email</a>
+      </li>
+      <li>
+        <a href="https://github.com/44thCircle">GitHub</a>
+      </li>
+    </ul>
   </footer>
-  </body>
+</body>
 
 </html>
